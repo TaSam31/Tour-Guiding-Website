@@ -10,12 +10,14 @@ Table of Contents
 6. Contributing
 7. License
 
-   1.Project Overview
+   1.Project Overview:
+   
 This website was created to showcase Mr. Dama’s Cape Town tour guide services, highlighting his unique and personalized approach to exploring Cape Town’s natural beauty and rich history. The website offers detailed information, a gallery, and an embedded Google Form for newsletter subscriptions.
 ![image](https://github.com/user-attachments/assets/b0579a5f-60d0-4507-b837-06ce39716bbc)
 
 
-   2.Features
+   2.Features:
+   
 Responsive Design: Optimized for various screen sizes.
 Contact Form: Allows users to directly contact Mr. Dama via email.
 Newsletter Subscription: Embedded Google Form for easy subscription to updates.
@@ -26,7 +28,8 @@ Dynamic Year in Footer: Displays the current year automatically.
 ![image](https://github.com/user-attachments/assets/e2c19346-e72a-423a-908b-82c4966a64de)
 ![image](https://github.com/user-attachments/assets/d2669a90-389e-485a-ad59-3c830dd43e2b)
 
-   3.Technologies Used
+   3.Technologies Used:
+   
 HTML & CSS: For creating structured content and styling.
 JavaScript: For form validation and dynamic elements.
 Google Forms: For collecting newsletter subscriptions.
@@ -35,7 +38,8 @@ Google Forms: For collecting newsletter subscriptions.
 
 
 
-   4.Setup and Installation
+   4.Setup and Installation:
+   
 Clone this repository:
 git clone https://github.com/TaSam31/Tour-Guiding-Website.git
 ![image](https://github.com/user-attachments/assets/ae17eaeb-c770-4782-a485-827ac6bfe4e5)
@@ -44,14 +48,17 @@ Alternatively you can use codespace in GitHub
 
 
  
-   5.Usage
+   5.Usage:
+   
 To explore the different sections, navigate through the Home, About Us, Tours, Gallery, and Contact pages.
 Fill out the contact form or subscribe to the newsletter for more updates.
 ![image](https://github.com/user-attachments/assets/0268483f-4765-4fe6-910c-82f4818a6787)
 
 
-   6.Contributing
+   6.Contributing:
+   
 Contributions are welcome! Please submit an issue or pull request for suggestions or improvements.
 
-   7.License
+   7.License:
+   
 This project is licensed under the MIT License.
