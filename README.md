@@ -12,7 +12,7 @@ Table of Contents
 
    1.Project Overview
 This website was created to showcase Mr. Dama’s Cape Town tour guide services, highlighting his unique and personalized approach to exploring Cape Town’s natural beauty and rich history. The website offers detailed information, a gallery, and an embedded Google Form for newsletter subscriptions.
-  ![image](https://github.com/user-attachments/assets/b0579a5f-60d0-4507-b837-06ce39716bbc)
+![image](https://github.com/user-attachments/assets/b0579a5f-60d0-4507-b837-06ce39716bbc)
 
 
    2.Features
@@ -39,6 +39,7 @@ Google Forms: For collecting newsletter subscriptions.
 Clone this repository:
 git clone https://github.com/TaSam31/Tour-Guiding-Website.git
 ![image](https://github.com/user-attachments/assets/ae17eaeb-c770-4782-a485-827ac6bfe4e5)
+
 Alternatively you can use codespace in GitHub
 
 
