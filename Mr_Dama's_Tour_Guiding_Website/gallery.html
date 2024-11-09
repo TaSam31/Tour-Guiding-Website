@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Dama's Tour Guiding Services - Gallery | Cape Town Tours</title>
+    <meta name="description" content="Explore our gallery of scenic tour images with Mr. Dama's Tour Guiding Services. Experience nature, city, and adventure tours in Cape Town.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="header-container">
+        <h1>Mr. Dama's Tour Guiding Services</h1>
+        <img class="logo" src="_images/logo_icon.png" alt="Mr. Dama's Tour Guiding Services Logo">
+    </header>
+
+    <main>
+        <h2>Tour Gallery</h2>
+
+        <section aria-labelledby="nature-tours">
+            <h3 id="nature-tours">Nature Tours</h3>
+            <div class="lightbox">
+                <a href="_images/nature_tours.jpg" class="lightbox" title="Cape Town Nature Tour">
+                    <img src="_images/nature_tours.jpg" alt="Cape Town Nature Tour - Stunning Landscapes" class="gallery">
+                </a>
+            </div>
+            <p>Experience the stunning natural landscapes of Cape Town.</p>
+        </section>
+
+        <section aria-labelledby="city-tours">
+            <h3 id="city-tours">City Tours</h3>
+            <div class="lightbox">
+                <a href="_images/city_tours.jpg" class="lightbox" title="Cape Town City Tour">
+                    <img src="_images/city_tours.jpg" alt="Cape Town City Tour - Vibrant City Life" class="gallery">
+                </a>
+            </div>
+            <p>Explore the vibrant city life with our guided city tours.</p>
+        </section>
+
+        <section aria-labelledby="adventure-tours">
+            <h3 id="adventure-tours">Adventure Tours</h3>
+            <div class="lightbox">
+                <a href="_images/adventure_tours.jpg" class="lightbox" title="Cape Town Adventure Tour">
+                    <img src="_images/adventure_tours.jpg" alt="Cape Town Adventure Tour - Thrilling Experiences" class="gallery">
+                </a>
+            </div>
+            <p>For the adventurous, our tours offer thrilling experiences.</p>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="bottomlinks">
+            <a href="home.html" title="Home | Mr. Dama's Tour Guiding Services">Home</a>
+            <a href="about.html" title="About Us | Mr. Dama's Tour Guiding Services">About Us</a>
+            <a href="tours.html" title="Tours | Mr. Dama's Tour Guiding Services">Tours</a>
+            <a href="gallery.html" class="currentPage" title="Gallery | Mr. Dama's Tour Guiding Services">Gallery</a>
+            <a href="contact.html" title="Contact | Mr. Dama's Tour Guiding Services">Contact</a>
+        </nav>
+        <p>&copy; <span id="current-year"></span> Mr. Dama's Tour Guiding Services</p>
+    </footer>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('a.lightbox').click(function(event) {
+            event.preventDefault();
+            const imageUrl = $(this).attr('href');
+            $('body').append(`
+                <div id="overlay" style="display: none;">
+                    <img src="${imageUrl}" alt="Lightbox Image">
+                    <span class="close-lightbox" role="button" aria-label="Close Lightbox">X</span>
+                </div>
+            `);
+            $('#overlay').fadeIn(1000);
+            $('#overlay, .close-lightbox').click(function() {
+                $('#overlay').fadeOut(500, function() {
+                    $(this).remove();
+                });
+            });
+        });
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    });
+</script>
+</body>
+</html>

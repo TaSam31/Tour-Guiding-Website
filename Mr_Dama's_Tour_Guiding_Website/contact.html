@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Mr. Dama's Tour Guiding Services | Cape Town Tour Guide</title>
+    <meta name="description" content="Get in touch with Mr. Dama's Tour Guiding Services for nature, city, and adventure tours in Cape Town.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header class="header-container">
+        <h1>Mr. Dama's Tour Guiding Services</h1>
+        <img class="logo" src="_images/logo_icon.png" alt="Mr. Dama's Tour Guiding Services Logo">
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Please reach out to us using the contact details below:</p>
+        <address>
+            <p>Phone: +27 083 985 3525</p>
+            <p>Email: <a href="mailto:niyodasam@mrdama.com">niyodasam@mrdama.com</a></p>
+            <p>Physical Address: 123 Cape Town St, Cape Town, South Africa</p>
+            <p>Business Hours: Monday - Friday, 8:00 AM - 6:00 PM</p>
+        </address>
+
+        <!-- Contact Form Section -->
+        <h3>Customer Contact Form</h3>
+        <form class="contact-form" action="https://formspree.io/f/xovqdkyp" method="post" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+    
+            <div class="form-buttons">
+                <input type="submit" value="Send Message">
+                <input type="button" value="Clear" onclick="clearForm()">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <nav class="bottomlinks">
+            <a href="home.html" title="Home | Mr. Dama's Tour Guiding Services">Home</a>
+            <a href="about.html" title="About Us | Mr. Dama's Tour Guiding Services">About Us</a>
+            <a href="tours.html" title="Tours | Mr. Dama's Tour Guiding Services">Tours</a>
+            <a href="gallery.html" title="Gallery | Mr. Dama's Tour Guiding Services">Gallery</a>
+            <a href="contact.html" class="currentPage" title="Contact | Mr. Dama's Tour Guiding Services">Contact</a>
+        </nav>
+        <p>&copy; <span id="current-year"></span> Mr. Dama's Tour Guiding Services</p>
+    </footer>
+</div>
+
+<script>
+    // Display current year in footer
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+
+    // Function to validate form
+    function validateForm() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+        let message = document.getElementById("message").value;
+
+        if (!name || !email || !phone || !message) {
+            alert("Please fill in all required fields.");
+            return false;
+        }
+
+        return true;
+    }
+
+    // Function to clear form fields
+    function clearForm() {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("message").value = "";
+    }
+</script>
+</body>
+</html>

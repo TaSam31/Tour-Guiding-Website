@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Mr. Dama's Tour Guiding Services | Cape Town Tours</title>
+        <meta name="description" content="Mr. Dama's Tour Guiding Services offers personalized nature, city, and adventure tours in Cape Town. Join us to explore South Africa's beauty!">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    
+    <div class="container">
+        <header class="header-container">
+            <h1>Mr. Damas Tour Guiding Services</h1>
+            <img src="_images/logo_icon.png" alt="business_logo" class="logo">
+        </header>
+
+        <main>
+            <div>
+                <h2>Welcome to Mr. Damas Tour Guiding Services</h2>
+
+                <img class="heroshot" src="_images/hero_shot.jpg" alt="Cape Town Mountains">
+                
+                <p>Discover Cape Town with a local expert.</p>
+                <p>Mr. Damas offers unique and personalized tours that showcase the best of Cape Town's natural beauty and cultural heritage. Tune in if you're a fan of fun activities, sightseeing, and memorable experiences catered to your liking.</p>
+                <p>With 10 years of experience, Mr. Damas offers quality service and quality time complemented by his knowledge of South African history.</p>
+                <p>Contact us today to book your unforgettable tour experience!</p>
+                <p>Phone: +27 083 985 3525 | Email: niyodasam@gmail.com</p>
+            </div>
+
+            <!-- Newsletter Signup Toggle Button -->
+            <div class="newsletter-section">
+                <button onclick="toggleForm()" class="toggle-form-button">Receive Newsletter</button>
+                
+                <!-- Hidden Google Form -->
+                <div id="google-form-container" class="google-form-container" style="display: none;">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSecmLHzLiG7JpflZeCWh0rjHLebeF95gWYeEP1-Wm7WyBY8RA/viewform?embedded=true" 
+                            frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <nav class="bottomlinks">
+                <a href="home.html" class="currentPage" title="Home | Mr. Dama's Tour Guiding Services">Home</a>
+                <a href="about.html" title="About Us | Mr. Dama's Tour Guiding Services">About Us</a>
+                <a href="tours.html" title="Tours | Mr. Dama's Tour Guiding Services">Tours</a>
+                <a href="gallery.html" title="Gallery | Mr. Dama's Tour Guiding Services">Gallery</a>
+                <a href="contact.html" title="Contact | Mr. Dama's Tour Guiding Services">Contact</a>
+            </nav>
+            <p>© <span id="current-year"></span> Mr. Damas Tour Guiding Services</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Displaying the current year in the footer
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+
+        // Toggle form visibility
+        function toggleForm() {
+            const formContainer = document.getElementById("google-form-container");
+            if (formContainer.style.display === "none") {
+                formContainer.style.display = "block";
+            } else {
+                formContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
